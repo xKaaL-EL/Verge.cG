@@ -1,0 +1,578 @@
+/*Universal styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Merriweather', sans-serif;
+}
+
+body {
+  background: rgb(245, 245, 245);
+  background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(43, 48, 54, 0.8601256642261697) 78%);
+}
+
+/*-----------------------*/
+
+/*Styling heading in background image of the verge*/
+.smgHead {
+  color: white;
+  position: relative;
+  font-weight: 900;
+  text-align: center;
+  top: 21rem;
+  font-size: 2.1rem;
+  opacity: 20%;
+}
+
+.smgHead:hover {
+  color: white;
+  opacity: 85%;
+}
+
+/*--------------------------*/
+
+/*Styling the navigation section.*/
+nav {
+  background-color: rgba(0, 0, 0, 0.69);
+  padding: 50px;
+  top: 25rem;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 2px solid white;
+  border-top: 1px solid white;
+}
+
+nav li {
+  margin: 0.93rem;
+  display: inline-block;
+  padding: 7px;
+  color: white;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+ul {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+/*Styling the logo in navbar.*/
+#name {
+  text-decoration: none;
+  color: white;
+  border: 4px solid white;
+  border-radius: 16px;
+  padding: 12px;
+  font-weight: 900;
+  position: absolute;
+  left: 4%;
+  top: 18px;
+  font-size: 24px;
+}
+
+#name:hover {
+  background-color: #ffffffe8;
+  color: #13002b;
+  box-shadow: 0 0 8px 1.5px #f3f7f3, 0 0 8px 1.5px rgb(245, 245, 245)
+}
+
+/*--------------------------*/
+
+/*Enhancing the responsiveness with toggle button.*/
+nav .toggleBtn i {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  left: 40%;
+  top: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+#click {
+  position: absolute;
+  left: 30%;
+  visibility: hidden;
+}
+
+/*--------------------------------------*/
+
+.navBar:hover {
+  border: 2px solid white;
+  border-radius: 13px;
+  padding: 10px 20px;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 0 8px 1.5px #f3f7f3, 0 0 8px 1.5px #f3f7f3
+}
+
+/*---------------------------------*/
+
+/*Styling the contents included within the main div wrapper.*/
+.wrapper {
+  position: relative;
+  top: 140px;
+  height: auto;
+}
+
+/*Styling the first section of the div.*/
+.tech {
+  padding: 50px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  flex-wrap: nowrap;
+  -webkit-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container .article {
+  max-width: 65%;
+  flex: 1 1 65%;
+  align-self: space-around;
+  justify-content: center;
+  padding: 45px 10px 20px 20px;
+  font-size: 10px;
+  color: white;
+}
+
+.container .article h1 {
+  text-align: center;
+  font-size: 5em;
+}
+
+.container .article p {
+  padding-top: 30px;
+  font-size: 2.3em;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0.8;
+}
+
+#p2 {
+  padding-top: 15px;
+}
+
+/*-------------------------------*/
+
+hr {
+  width: 90%;
+  margin: 50px auto;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+/*Styling the second section of the page.*/
+.creator {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.container1 h1 {
+  font-size: 75px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  color: black;
+  opacity: 0.6;
+}
+
+.creatorImg {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.creatorSec {
+  flex: 0 1 400px;
+  color: white;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 26px;
+  margin: 20px;
+  -webkit-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  max-height: 590px;
+}
+
+.creatorSec figure img {
+  width: 100%;
+  height: auto;
+}
+
+.creatorSec h3 {
+  font-size: 25px;
+  padding-top: 3px;
+  opacity: 0.8;
+}
+
+.creatorSec figcaption {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+#Designer {
+  margin-bottom: 30px;
+}
+
+#Developer {
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------*/
+
+/*Styling the third section of the page.*/
+.trending {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#gameHead {
+  font-size: 75px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  color: black;
+  opacity: 0.5;
+}
+
+.gamesSec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.frame {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  perspective: 500px;
+  margin: 0px 10px 35px 10px;
+  -webkit-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  border: 0px solid white;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.frame img {
+  width: 300px;
+  height: 310px;
+}
+
+.frame .details {
+  width: 70%;
+  height: 80%;
+  padding: 5% 8%;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg);
+  transform-origin: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  color: white;
+}
+
+.frame:hover .details {
+  transform: translate(-50%, -50%) rotateY(0deg);
+  opacity: 1;
+}
+
+.frame .details h1 {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.frame .details p {
+  opacity: 0.7;
+  padding-top: 3px;
+}
+
+/*---------------------------------------------------*/
+
+/*Styling the contact section of the page.*/
+.contactUs {
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.container3 {
+  width: 95%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 20px 20px 50px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -12px 12px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contactSec {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.container3 h1 {
+  font-size: 75px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.segx {
+  width: 33.33%;
+  margin-bottom: 20px;
+}
+
+.segx h3 {
+  font-size: 20px;
+}
+
+.segx p {
+  padding: 20px;
+}
+
+#about p {
+  opacity: 0.8;
+}
+
+#contact span {
+  opacity: 0.8;
+}
+
+#social a {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+#social a:hover {
+  opacity: 0.9;
+  font-size: 28px;
+}
+
+#social .socialIcons {
+  position: relative;
+  top: 35px;
+}
+
+#contact p {
+  line-height: 1.5;
+}
+
+#contact p .mail {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact p .mail:hover {
+  opacity: 0.9;
+  font-size: 15.5px;
+}
+
+/*--------------------------------------*/
+
+/*Styling the footer section.*/
+.foot {
+  position: relative;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 100%;
+  padding: 13px;
+  color: white;
+  top: 140px;
+}
+
+.foot a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.foot a:hover {
+  border-bottom: 2px solid white;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/*---------------------------------------------*/
+
+/*Styling the media queries used in the whole page.*/
+
+/*Media query for the contact section.*/
+@media only screen and (max-width:830px) {
+  .contactSec {
+    flex-direction: column;
+  }
+
+  .segx {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  #social .socialIcons {
+    top: 20px;
+  }
+
+  #contact {
+    margin-top: 30px;
+  }
+}
+
+/*------------------------------------*/
+
+/*Media query for contact section.*/
+@media only screen and (max-width:1170px) {
+  .creatorImg {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .creatorSec figure img {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------------*/
+
+@media only screen and (max-width:850px) {
+  .smgHead {
+    font-size: 1.5rem;
+    top: 23.5rem;
+  }
+
+  nav {
+    top: 27.5rem;
+  }
+}
+
+/*Media query for the navigation section.*/
+
+@media only screen and (max-width:834px) {
+  nav ul {
+    position: fixed;
+    top: 540px;
+    left: -110%;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid white;
+    transition: all 0.4s ease;
+  }
+
+  #click:checked~ul {
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  #click:checked~.toggleBtn i::before {
+    content: "\f00d";
+    transition: all 0.3s ease;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  #name {
+    font-size: 20px;
+    top: 19px;
+  }
+
+  nav .toggleBtn i {
+    display: block;
+    left: 88%;
+  }
+
+  .navBar:hover {
+    padding: 5px 20px;
+  }
+}
+
+/*---------------------------------------------------*/
+
+/*Media query for technology section.*/
+@media only screen and (max-width:1005px) {
+  .container .article {
+    font-size: 9px;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width:960px) {
+  .container .article {
+    font-size: 8px;
+    padding-top: 35px;
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .container .article {
+    font-size: 7.5px;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .container img {
+    display: none;
+  }
+
+  .container .article {
+    max-width: 100%;
+    font-size: 10px;
+    padding: 25px 10px 20px 20px;
+  }
+}
+
+/*---------------------------------------*/
