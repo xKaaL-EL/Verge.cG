@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="HaxorGzrX11">
+  <link rel="stylesheet" href="./resources/CodeCadCss/Verge.css">
+  <!--The only typeface used in this project.-->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/051b3a24e2.js" crossorigin="anonymous"></script>
+  <!--Title-->
+  <title>The Verge : A Gaming Community</title>
+  <!--Styling the header with the background image of verge along with its media query.-->
+  <style>
+    header {
+      background-image: url("./resources/CodeCadImg/verge1.png");
+      width: 100%;
+      background-position: center;
+      display: inline-block;
+      height: 400px;
+      background-size: cover;
+    }
+
+    @media only screen and (max-width:850px) {
+      header {
+        background-image: url("./resources/CodeCadImg/verge2.png");
+        height: 440px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--Main header section containing background image of the verge and the whole Navigation section.-->
+  <header>
+    <p class="smgHead"> The largest Gaming community of the world.</p>
+    <!--Nvaigation section starts.-->
+    <nav>
+      <a href="https://github.com/Agreegor" id="name" target="_blank">HaxorGzrX11</a>
+      <input type="checkbox" name="checkbox" id="click">
+      <label for="click" class="toggleBtn"><i class="fas fa-bars"></i></label>
+      <ul>
+        <li><a href="#first" class="navBar">Techno</a></li>
+        <li><a href="#second" class="navBar">Creators</a></li>
+        <li><a href="#third" class="navBar">Trending</a></li>
+        <li><a href="#fourth" class="navBar">ContactUs</a></li>
+      </ul>
+    </nav>
+    <!--Navigation sections ends.-->
+  </header>
+  <!--Header sections ends.-->
+
+  <!--Main section of the page starts.-->
+  <main>
+    <!--This is the main div containing all the elements of the page-->
+    <div class="wrapper">
+      <!--First section of the page starts here.-->
+      <section class="tech" id="first">
+        <!--Flex container of this section.-->
+        <div class="container">
+          <!--First flex item.-->
+          <figure>
+            <img src="resources\CodeCadImg\techno.png" alt="Tecnology">
+          </figure>
+          <!--Second flex item.-->
+          <div class="article">
+            <h1>Gaming Technologies</h1>
+            <p>With gaming graphics this good, you need to have a bona fide way to show them off.
+              Enter Ultra 4K gaming. Though televisions with 4K capabilities (meaning it must support at least 4,000 pixels)
+              or 4K laptops (like the Intel-powered Lenovo Y50) started out at thousands of dollars</p>
+            <p id="p2">The eventual standard in the way we watch the games we play.
+              With unbeatable colors and crispness,
+              there’s nothing else that can come close. You’ll actually be able to lose yourself in the game before you come back to reality.
+              And you thought 1080p looked good.</p>
+
+          </div>
+        </div>
+        <!--Flex container ends.-->
+      </section>
+      <!--First section of the page ends here.-->
+      <hr>
+      <!--Second section of the page starts here-->
+      <section class="creator">
+        <!--Main contents goes here.-->
+        <div class="container1" id="second">
+          <!--Heading-->
+          <h1>Our Creators</h1>
+          <!--Flex container of this section starts here.-->
+          <div class="creatorImg">
+            <!--First flex item.-->
+            <div class="creatorSec" id="Designer">
+              <figure>
+                <img src="resources\CodeCadImg\creator1.png" alt="Designer">
+                <figcaption>Megan</figcaption>
+              </figure>
+              <h3>Web-Designer</h3>
+            </div>
+            <!--Second flex item.-->
+            <div class="creatorSec" id="Developer">
+              <figure>
+                <img src="resources\CodeCadImg\creator2.png" alt="Developer">
+                <figcaption>Isabella Ethan</figcaption>
+              </figure>
+              <h3>Web-Developer</h3>
+            </div>
+            <!--Third flex item.-->
+            <div class="creatorSec" id="SecurityExp">
+              <figure>
+                <img src="resources\CodeCadImg\creator3.png" alt="SecurityExp">
+                <figcaption>Eric Williams</figcaption>
+              </figure>
+              <h3>Security-Expert</h3>
+            </div>
+          </div>
+          <!--Flex container ends.-->
+        </div>
+      </section>
+      <!--Second section of the page ends here.-->
+      <hr>
+      <!--Third section of the page starts here.-->
+      <section class="trending">
+        <!--Main contents goes here-->
+        <div class="container2" id="third">
+          <!--Heading-->
+          <h1 id="gameHead">Trending Games</h1>
+          <!--Flex container of this section starts here.-->
+          <div class="gamesSec">
+            <!--First flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\assasian.png" alt="Assasian">
+              <div class="details">
+                <h1>Assasian's Creed: Unity</h1>
+                <p> The single-player story mode follows
+                  Arno Victor Dorian in his efforts to expose the true powers behind the French revolution..</p>
+              </div>
+            </div>
+            <!--Second flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\overwatch.png" alt="Overwatch">
+              <div class="details">
+                <h1>Overwatch</h1>
+                <p> A vibrant team-based shooter set on a near-future earth.
+                  Every match is an intense 6v6 battle between a cast of unique heroes.Blizzard Entertainment..</p>
+              </div>
+            </div>
+            <!--Third flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\witcher.png" alt="Witcher">
+              <div class="details">
+                <h1>The Witcher 3: Wild Hunt</h1>
+                <p> Geralt of Rivia, a monster slayer
+                  for hire known as a Witcher who is looking for his missing adopted daughter on the run from the wild hunt..</p>
+              </div>
+            </div>
+            <!--Fourth flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\gta5.png" alt="gta5">
+              <div class="details">
+                <h1>Grand Theft Auto</h1>
+                <p>The single-player story follows three protagonists—retired bank robber Michael De Santa,
+                  street gangster Franklin Clinton, and drug dealer and arms smuggler Trevor Philips..</p>
+              </div>
+            </div>
+            <!--Fifth flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\counter.png" alt="Counter-Strike">
+              <div class="details">
+                <h1>Counter-Strike: Global Offensive</h1>
+                <p>The game pits two teams against each other: the Terrorists and the Counter-Terrorists.
+                  Both sides are tasked with eliminating the other..</p>
+              </div>
+            </div>
+            <!--Sixth flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\valkyrie.png" alt="Valkyrie">
+              <div class="details">
+                <h1>Valkyrie Profile</h1>
+                <p>The game follows the titular valkyrie, Lenneth, as she travels through Midgard, collecting the souls
+                  of slain heroes to serve her personal for Ragnarok..</p>
+              </div>
+            </div>
+            <!--Seventh flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\cod.png" alt="Codww2">
+              <div class="details">
+                <h1>Call Of Duty: WWII</h1>
+                <p>Experience the story of the unbreakable brotherhood
+                  of common men fighting to preserve freedom in a world on the brink of tyranny.</p>
+              </div>
+            </div>
+            <!--Eighth flex item-->
+            <div class="frame">
+              <img src="resources\CodeCadImg\medal.png" alt="Medal-of-Honour">
+              <div class="details">
+                <h1>Medal Of Honor</h1>
+                <p>This legendary military shooter game will Unleash the hero within as
+                  you take on some of the deadliest combat missions in history with Medal of Honor.. </p>
+              </div>
+            </div>
+          </div>
+          <!--Flex container ends here.-->
+        </div>
+      </section>
+      <!--Third section of the page ends here.-->
+      <hr>
+      <!--Contact section of the page starts here.-->
+      <section class="contactUs">
+        <!--Mian contents goes here.-->
+        <div class="container3" id="fourth">
+          <!--Heading-->
+          <h1>Contact Us</h1>
+          <!--Flex container of this section starts here.-->
+          <div class="contactSec">
+            <!--First flex item.-->
+            <div id="about" class="segx">
+              <h3>About : The Verge Community</h3>
+              <p>The Verge is an ambitious multimedia effort founded in 2020 to
+                examine how gaming technologies will change life in the future
+                for a massive mainstream audience.</p>
+            </div>
+            <!--Second flex item.-->
+            <div id="social" class="segx">
+              <h3>Social</h3>
+              <div class="socialIcons">
+                <a href="https://www.facebook.com/" class="socialSites" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/Agreegor" class="socialSites" target="_blank"><i class="fab fa-github-alt"></i></a>
+                <a href="https://www.linkedin.com/in/haxor-gredza-b1a7891b4/" class="socialSites" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/" class="socialSites" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <!--Third flex item.-->
+            <div id="contact" class="segx">
+              <h3>Get In Touch</h3>
+              <p>
+                <a href="mailto:Professor_ParadoxGz1@protonmail.ch" class="mail">Professor_ParadoxGz1@protonmail.ch</a>
+                <br>
+                <span>38 Walton Road</span>
+                <br>
+                <span>Folkestone, kent</span>
+                <br>
+                <span>CT19 5QS, United Kingdom</span>
+                <br>
+                <span>Company No. 10286193</span>
+              </p>
+            </div>
+          </div>
+          <!--Flex container of this section ends here.-->
+        </div>
+      </section>
+      <!--Contact section of the page ends here.-->
+    </div>
+    <!--Main div ends here.-->
+  </main>
+  <!--End of main section.-->
+
+  <!--Footer section of the page.-->
+  <footer class="foot">
+    <a href="https://github.com/Agreegor" target="_blank">From Ashwatthama's creations</a> 2020 &copy; All rights reserved.</div>
+  </footer>
+  <!--............-->
+
+</body>
+
+</html>
